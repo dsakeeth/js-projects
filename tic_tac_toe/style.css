@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav li img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.left-container,
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 2em;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+.reset-btn {
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    color: white;
+}
+
+.winner {
+    padding: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.winning-box {
+    background-color: lightgreen;
+}
