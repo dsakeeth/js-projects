@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         winner.textContent = '';
         boxes.forEach(box => {
             box.textContent = '';
+            box.classList.remove('winning-box');
         });
     }
 
@@ -61,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 boxes[a].classList.add('winning-box');
                 boxes[b].classList.add('winning-box');
                 boxes[c].classList.add('winning-box');
+                const wb=document.querySelectorAll(".winning-box");
                 break;
             }
         }

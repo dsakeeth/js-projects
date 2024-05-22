@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('bg.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav h1:hover {
+    animation: bounce 0.5s ease; /* Call the animation on hover */
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    50% {
+        transform: scale(1.2); /* Scale up */
+    }
+    100% {
+        transform: scale(1); /* Return to normal scale */
+    }
+}
+
+nav button {
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: white;
+    color: rgb(87, 180, 218);
+    border-radius: 10px;
+}
+
+.grid-container {
+    max-height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+    gap: 10px;
+}
+
+.grid-item {
+   /* background-color: rgba(255, 255, 255, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect to grid items */
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+}
+
+#search-box input[type="text"]{
+    border-radius: 5px;
+    padding: 7px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: black;
+    outline: none;
+    font-size: medium;
+    font-weight: 300;
+}
+
+#search-box button{
+    padding: 7px;
+    border: 5px;
+    background: skyblue;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#search-box button:hover{
+    animation: bounce 0.5s ease;
+}
+
+#current-weather {
+    flex-direction: column; 
+}
+
+.current-weather-details {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
+    font-size: medium;
+    font-weight: 200;
+}
+
+.wind-humidity {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.wind, .humidity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
