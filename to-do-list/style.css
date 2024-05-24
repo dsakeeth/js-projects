@@ -137,7 +137,7 @@ body {
         padding: 5px;
         background-color: black;
         border-radius: 5px;
-        width: 80%;
+        width: auto;
         min-height: 25px; 
         max-height: 50px;
         overflow: auto; 
