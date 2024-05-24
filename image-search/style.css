@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #028391;
+    color: white;
+}
+
+.container
+{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 10vh;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:25px auto;
+}
+
+.search-box {
+    padding: 10px 40px; /* Keep the padding as it is */
+    border: none;
+    background: #01204E; /* Change the background color */
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    outline: none;
+}
+
+.search-box::placeholder {
+    color: white;
+    font-size: 24px;
+    margin: 5px;
+    text-transform: capitalize;
+    text-align-last: start;
+}
+
+.search-button{
+    padding: 10px 40px;
+    color: white;
+    background-color: #FEAE6F;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.image-container{
+    background-color: none;
+    height: 100%;
+    width: 200vh;
+    margin: 15px auto;
+}
+
+.showmore-button{
+    padding: 5px 30px;
+    color: white;
+    background-color: #FEAE6F;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 42%;
+    margin-bottom: 5px;
+    display: none;
+    border-radius: 5px;
+}
+
+.warning{
+    color:skyblue;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.image-container {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.image-container img {
+   /* max-width: 400px;max-height: 400px;*/
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
