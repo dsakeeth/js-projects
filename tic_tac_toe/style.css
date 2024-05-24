@@ -97,6 +97,7 @@ nav li img {
 
 @media screen and (max-width: 600px) {
     .container {
-        margin-top: 20px;
+        margin-top: auto;
+        display: block;
     }
 }
