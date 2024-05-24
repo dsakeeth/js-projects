@@ -14,8 +14,8 @@ searchButton.addEventListener("click", (e) => {
     if (searchItem) {
         warning.textContent = "";
         currentSearchItem = searchItem;
-        page = 1; // Reset to first page for new search
-        imageContainer.innerHTML = ""; // Clear previous results for new search
+        page = 1;
+        imageContainer.innerHTML = "";
         getImages(searchItem);
     } else {
         warning.textContent = "Enter something to search";
