@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+.clock{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin: 25vh;
+    position: relative
+}
+
+.hour,.Minute,.second,.year,.month,.date,.day{
+    font-size:100px
+}
+
+#Hours, #Minutes, #seconds,#years,#Months,#dates,#days {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media (max-width:650px)
+{
+    .clock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .hour, .Minute, .second, .year, .month, .date, .day{
+        font-size: 60px; 
+    }
+}
