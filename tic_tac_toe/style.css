@@ -94,3 +94,9 @@ nav li img {
 .winning-box {
     background-color: lightgreen;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 20px;
+    }
+}

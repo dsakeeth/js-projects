@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const [a, b, c] = condition;
             if (board[a] && board[a] === board[b] && board[a] === board[c]) {
                 gameOver = true;
+                //playerTurn.textContent="";
                 winner.textContent = `${currentPlayer} wins!`;
                 boxes[a].classList.add('winning-box');
                 boxes[b].classList.add('winning-box');
