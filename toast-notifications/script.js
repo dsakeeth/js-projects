@@ -1,0 +1,1 @@
+let toastBox=document.querySelector(".toastBox");
