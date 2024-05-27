@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(19, 0, 128);
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.password-generator, .password-checker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+input[type='text']{
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid white;
+    text-align: justify;
+    padding-right: 40px;
+}
+
+.input-wrapper{
+    position: relative;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50px;
+    margin: 10px 0;
+    color: black;
+    background-color: rgb(226, 141, 43);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
