@@ -105,6 +105,7 @@ nav button {
     gap: 10px; 
     font-size: medium;
     font-weight: 200;
+    transition: 2s;
 }
 
 .wind-humidity {
@@ -118,4 +119,22 @@ nav button {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.location{
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.warning{
+    color:red;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.hour-forecast{
+    display: flex;
+    flex-direction: row;
 }

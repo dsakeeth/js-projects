@@ -48,5 +48,23 @@ h1{
     width: 70px;
 }
 
+@media screen and (max-width: 650px) {
+    .stopwatch {
+        width: 90%;
+        max-width: 300px;
+        margin: 20vh auto;
+        padding: 20px 0;
+    }
 
+    h1 {
+        font-size: 50px;
+    }
 
+    .buttons img {
+        width: 40px;
+    }
+
+    .buttons img:nth-child(2) {
+        width: 50px;
+    }
+}
